@@ -1,0 +1,25 @@
+#!/usr/bin/env ruby
+
+require 'thread'
+
+if ARGV.include?('-h')
+  puts "livelydocs [task]"
+  puts "- task : defaults to rdoc"
+  exit
+end
+
+puts "** Running LivelyDocs!"
+
+task_name = ARGV.shift
+
+t = Thread.start do 
+  while true
+    result = `rake -s #{task_name || "rdoc"}`
+    puts result unless result.strip.empty?
+    sleep(1)
+  end
+end
+
+trap(:INT) { puts "\n** LivelyDocs! is no longer lively"; t.exit! }
+
+t.join

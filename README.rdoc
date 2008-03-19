@@ -1,0 +1,27 @@
+
+= LivelyDocs!
+
+Escape the hell of:
+<tt>rake rdoc</tt>..edit..<tt>rake rdoc</tt>..edit..etc..
+
+Use LivelyDocs for auto-reloading docs!
+
+You should use it because it's a freaking loop!!! .. and the README has lots of !!!!
+
+== Install
+
+<tt>gem install livelydocs</tt>
+
+== Run
+  
+<tt>~$ livelydocs</tt>
+
+<tt>** Running LivelyDocs!</tt>
+
+=== Custom Task
+
+<tt>~$ livelydocs another_rdoc</tt>
+
+== Open, edit, refresh, edit, refresh, etc..
+
+<tt>open doc/index.html</tt>

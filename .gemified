@@ -1,0 +1,8 @@
+--- 
+:homepage: blakemizerany.com
+:rubyforge_project: livelydocs
+:name: livelydocs
+:author: Blake Mizerany
+:summary: Escape the hell of `rake rdoc` .. edit .. `rake rdoc` .. edit
+:version: "0.1"
+:email: blake.mizerany@gmail.com
